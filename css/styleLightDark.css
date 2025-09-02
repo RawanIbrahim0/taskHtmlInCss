@@ -1,0 +1,80 @@
+.content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    width: 30%;
+    text-align: center;
+
+}
+
+.but {
+    margin: 20px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.but:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Show {
+    display: none;
+}
+
+.dark {
+    width: 70px;
+    font-size: 15px;
+    color: white;
+    display: none;
+}
+
+.light {
+    width: 70px;
+    font-size: 15px;
+}
+
+#Show:checked ~ .content {
+    background-color: black;
+}
+
+#Show:checked ~ .content h2 {
+    color: white;
+}
+
+/* #Show:checked ~ .light {
+    display: none;
+}
+
+#Show:checked .dark {
+    color: white;
+    display: block;
+} */
+
+#Show:checked ~ .content .but {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px rgb(255, 255, 255) solid;
+    box-shadow: 0 8px 16px 0 rgba(237, 236, 236, 0.2), 0 6px 20px 0 rgba(212, 212, 212, 0.19);
+
+}
+
+#Show:checked ~ .content p {
+    color: white;
+}
