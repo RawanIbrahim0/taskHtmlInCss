@@ -78,7 +78,6 @@ img {
   color: black;
   font-weight: bold;
   font-family: "Roboto Mono", monospace;
-
 }
 
 .halfcircleHover {
@@ -104,15 +103,18 @@ visibility: hidden;
 }
 
 i{
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: white;
 }
 
 i:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgb(161, 118, 201);
-    background-color: white;
-    width:40px;
-    height: 50px;
+  background-color: white;
+  width:40px;
+  height: 50px;
 }
 
 
